@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=667, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Responsive SVG Board</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+  <div class="w-full max-w-[667px] h-[375px] mx-auto p-2 flex items-center justify-center">
+    <svg
+      class="w-full h-full"
+      viewBox="0 0 600 400"
+      version="1.1"
+      id="svg1"
+      inkscape:export-filename="board_body.svg"
+      inkscape:export-xdpi="96"
+      inkscape:export-ydpi="96"
+      xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+      xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:svg="http://www.w3.org/2000/svg">
+      <sodipodi:namedview
+        id="namedview1"
+        pagecolor="#ffffff"
+        bordercolor="#000000"
+        borderopacity="0.25"
+        inkscape:showpageshadow="2"
+        inkscape:pageopacity="0.0"
+        inkscape:pagecheckerboard="0"
+        inkscape:deskcolor="#d1d1d1"
+        inkscape:document-units="px"
+        inkscape:export-bgcolor="#ffffffff">
+        <inkscape:page
+          x="0"
+          y="0"
+          width="600"
+          height="400"
+          id="page2"
+          margin="0"
+          bleed="0" />
+      </sodipodi:namedview>
+      <defs id="defs1">
+        <filter
+          inkscape:menu-tooltip="3D warped, fibered wood texture"
+          inkscape:menu="Materials"
+          inkscape:label="3D Wood"
+          height="1.144"
+          y="-0.072"
+          width="1.096"
+          x="-0.048"
+          style="color-interpolation-filters:sRGB"
+          id="filter5">
+          <feGaussianBlur result="result8" stdDeviation="4" id="feGaussianBlur1" />
+          <feTurbulence baseFrequency="0.025 0.2" numOctaves="3" type="fractalNoise" result="result7" seed="22" id="feTurbulence1" />
+          <feComposite in2="result8" operator="in" in="SourceGraphic" result="result6" id="feComposite1" />
+          <feDisplacementMap in2="result6" result="result4" scale="50" yChannelSelector="A" xChannelSelector="A" in="result7" id="feDisplacementMap1" />
+          <feFlood flood-color="rgb(230,211,138)" flood-opacity="1" id="feFlood1" />
+          <feComposite in2="result4" operator="atop" result="result2" id="feComposite2" />
+          <feComposite in2="SourceGraphic" operator="atop" in="result2" result="result9" id="feComposite3" />
+          <feGaussianBlur result="result0" in="result9" stdDeviation="8" id="feGaussianBlur3" />
+          <feSpecularLighting specularExponent="15" specularConstant="0.69999999" surfaceScale="5" lighting-color="#ffffff" result="result1" in="result0" id="feSpecularLighting3">
+            <feDistantLight azimuth="235" elevation="50" id="feDistantLight3" />
+          </feSpecularLighting>
+          <feComposite operator="in" result="result2" in="result1" in2="result9" id="feComposite4" />
+          <feComposite k3="0.5" k2="0.5" operator="arithmetic" result="result4" in="result9" in2="result2" id="feComposite5" k1="0" k4="0" />
+          <feConvolveMatrix order="3 3" kernelMatrix="2 0 0 0 2 0 0 0 -2 " targetX="2" targetY="2" result="result10" id="feConvolveMatrix5" />
+          <feBlend mode="multiply" in="result10" in2="result10" id="feBlend5" />
+        </filter>
+      </defs>
+      <g inkscape:groupmode="layer" id="layer1" inkscape:label="board">
+        <rect style="font-variation-settings:'wght' 700;fill:none;fill-opacity:1;stroke:#030201;stroke-width:0;stroke-dasharray:none;filter:url(#filter5)" id="board_body" width="600" height="400" x="0" y="0" />
+      </g>
+      <g inkscape:groupmode="layer" id="layout" inkscape:label="layout">
+        <rect style="font-variation-settings:'wght' 700;fill:#551c00;fill-opacity:1;stroke:#030201;stroke-width:0;stroke-dasharray:none" id="outerbar_left" width="26.666666" height="400" x="0" y="0" />
+        <rect style="font-variation-settings:'wght' 700;fill:#551c00;fill-opacity:1;stroke:#030201;stroke-width:0;stroke-dasharray:none" id="outerbar_right" width="26.666666" height="400" x="573.33331" y="0" />
+        <rect style="font-variation-settings:'wght' 700;fill:#551c00;fill-opacity:1;stroke:#030201;stroke-width:0;stroke-dasharray:none" id="middle_bar" width="13.333333" height="400" x="293.33337" y="0" />
+        <rect style="font-variation-settings:'wght' 700;fill:#ff5400;fill-opacity:1;stroke:#030201;stroke-width:0;stroke-dasharray:none" id="quadrant_1" width="266.66666" height="400" x="306.66669" y="0" />
+        <rect style="font-variation-settings:'wght' 700;fill:#e46004;fill-opacity:1;stroke:#030201;stroke-width:0;stroke-dasharray:none" id="quadrant_2" width="266.66666" height="400" x="26.666666" y="0" />
+      </g>
+      <g inkscape:groupmode="layer" id="points" inkscape:label="points">
+        <path style="font-variation-settings:'wght' 700;fill:#ac0f3e;fill-opacity:1;stroke:#030201;stroke-width:0;stroke-dasharray:none" d="M 306.66669,400 331.49924,245.83063 351.06669,400 Z" id="point_6" />
+        <path style="font-variation-settings:'wght' 700;fill:#0412e4;fill-opacity:1;stroke:#030201;stroke-width:0;stroke-dasharray:none" d="M 351.06669,400 375.89924,245.83063 395.46669,400 Z" id="point_5" />
+        <path style="font-variation-settings:'wght' 700;fill:#0412e4;fill-opacity:1;stroke:#030201;stroke-width:0;stroke-dasharray:none" d="M 528.80003,400 553.63258,245.83063 573.20003,400 Z" id="point_1" />
+        <path style="font-variation-settings:'wght' 700;fill:#3fe404;fill-opacity:1;stroke:#030201;stroke-width:0;stroke-dasharray:none" d="M 484.40003,400 509.23258,245.83063 528.80003,400 Z" id="point_2" />
+        <path style="font-variation-settings:'wght' 700;fill:#3fe404;fill-opacity:1;stroke:#030201;stroke-width:0;stroke-dasharray:none" d="M 395.60003,400 420.43258,245.83063 440.00003,400 Z" id="point_4" />
+        <path style="font-variation-settings:'wght' 700;fill:#0412e4;fill-opacity:1;stroke:#030201;stroke-width:0;stroke-dasharray:none" d="M 440.00003,400 464.83258,245.83063 484.40003,400 Z" id="point_3" />
+      </g>
+    </svg>
+  </div>
+</body>
+</html>
